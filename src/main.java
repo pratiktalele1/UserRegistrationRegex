@@ -10,5 +10,8 @@ public static void main(String[] args) {
 	//creating uc3 object
 	UC3 uc3=new UC3();
 	uc3.email("abc.xyz@bl.co.in");
+	//creating uc4 object
+	UC4 uc4=new UC4();
+	uc4.phoneNumber("91 8421863149");
 }
 }
