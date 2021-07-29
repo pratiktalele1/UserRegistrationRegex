@@ -25,5 +25,8 @@ public static void main(String[] args) {
 	//creating uc8 object
 	UC8 uc8=new UC8();
 	uc8.password("A0*aaaaaa");
+	//creating uc9 object
+	UC9 uc9=new UC9();
+	uc9.password("A0*aaaaaa");
 }
 }
