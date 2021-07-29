@@ -16,5 +16,8 @@ public static void main(String[] args) {
 	//creating uc5 object
 	UC5 uc5=new UC5();
 	uc5.password("asdasdfg");
+	//creating uc6 object
+	UC6 uc6=new UC6();
+	uc6.password("Pratik12");
 }
 }
