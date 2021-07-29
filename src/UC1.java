@@ -5,7 +5,7 @@ public class UC1 {
 	// validating first name
 	public void firstName(String str) {
 		int flag = 0;
-		Pattern pattern = Pattern.compile("^[A-Z]{3}$");
+		Pattern pattern = Pattern.compile("^[A-Z][a-z]{2}");
 		Matcher matcher = pattern.matcher(str);
 		while (matcher.find()) {
 			flag = 1;
