@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class UC9 {
 	// validating password
-		public void password(String str) {
+		public int password(String str) {
 			int flag = 0;
 			Pattern pattern = Pattern.compile("^([A-Z]{1,1}[0-9]{1}[_?&*$#@]{1}[a-zA-Z]{6})");
 			Matcher matcher = pattern.matcher(str);
@@ -12,8 +12,10 @@ public class UC9 {
 			}
 			if (flag == 1) {
 				System.out.println("valid password");
+				return 1;
 			} else {
 				System.out.println("invalid password");
+				return 0;
 			}
 
 		}

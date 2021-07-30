@@ -1,6 +1,6 @@
 
 public class main {
-public static void main(String[] args) {
+public static void main(String[] args) throws invalidUserDetails  {
 	//creating uc1 object
 	UC1 uc1=new UC1();
 	uc1.firstName("Pratik");
@@ -28,5 +28,8 @@ public static void main(String[] args) {
 	//creating uc9 object
 	UC9 uc9=new UC9();
 	uc9.password("A0*aaaaaa");
+	//creating object for uc12
+//	UC12 uc12=new UC12();
+//	uc12.validUserDetail();
 }
 }

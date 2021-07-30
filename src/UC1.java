@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class UC1 {
 	// validating first name
-	public void firstName(String str) {
+	public int firstName(String str) {
 		int flag = 0;
 		Pattern pattern = Pattern.compile("^[A-Z][a-z]{2}");
 		Matcher matcher = pattern.matcher(str);
@@ -12,8 +12,10 @@ public class UC1 {
 		}
 		if (flag == 1) {
 			System.out.println("valid First Name");
+			return 1;
 		} else {
 			System.out.println("invalid First Name");
+			return 0;
 		}
 
 	}

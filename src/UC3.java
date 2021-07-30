@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class UC3 {
 	// validating email
-		public void email(String str) {
+		public int email(String str) {
 			int flag = 0;
 			Pattern pattern = Pattern.compile("^abc.[A-Za-z]+@bl.co");
 			Matcher matcher = pattern.matcher(str);
@@ -12,8 +12,10 @@ public class UC3 {
 			}
 			if (flag == 1) {
 				System.out.println("valid email");
+				return 1;
 			} else {
 				System.out.println("invalid email");
+				return 0;
 			}
 
 		}
